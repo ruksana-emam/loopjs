@@ -1,0 +1,3 @@
+const funct=(a)=>{
+    
+}

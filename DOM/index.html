@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="head1">DOM</h1>
+    <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia asperiores deleniti dignissimos quaerat, nisi atque sapiente nulla, est aliquid eius ipsam magni neque officiis, voluptatem veritatis. Quaerat ullam dolore consequuntur.</p>
+    <button onclick="displayAlert()">click here</button>
+    <button onclick="changePara()">click here</button>
+</body>
+<script>
+    // function displayAlert(){
+    //     alert("button clicked")
+    // }
+       function displayAlert(){
+        let element=document.getElementById('head1')
+        element.innerText='hello world' //change the element or subject  we use innertext
+        element.style.color='red'
+       }
+    function changePara(){
+        let element=document.getElementById('para1')
+        element.innerText='paragraph changed'
+        element.style.fontSize='80px'
+    }
+</script>
+</html>
